@@ -9,7 +9,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#define USE_BSRR		true                    
+#define USE_BSRR		true     
+#define WORD_LENGTH     16               
 
 uint32_t *pRccAhb1enr = (uint32_t*)0x40023830;    // RCC_AHB1ENR - RCC AHB1 peripheral clock enable register
 uint32_t *pGpioAModer = (uint32_t*)0x40020000;    // GPIOA_MODER - GPIO port mode register
@@ -45,7 +46,7 @@ int main(void)
 		}
 		else
 		{
-			*pGpioABsrr = (1 << (16 + 5));          // clear bit 16 + 5
+			*pGpioABsrr = (1 << (WORD_LENGTH + 5));          // clear bit 16 + 5
 		}
 #endif
 	}
