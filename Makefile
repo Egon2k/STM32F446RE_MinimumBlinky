@@ -41,7 +41,7 @@ LFLAGS += --specs=nosys.specs
 LFLAGS += -nostdlib
 LFLAGS += -lgcc
 LFLAGS += -T$(LSCRIPT)
-VECT_TBL = ./startup_stm32f446retx.s
+VECT_TBL = ./startup_stm32f446retx.S
 C_SRC    = ./main.c
 OBJS =  $(VECT_TBL:.S=.o)
 OBJS += $(C_SRC:.c=.o)
