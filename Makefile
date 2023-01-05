@@ -66,3 +66,4 @@ $(TARGET).bin: $(TARGET).elf
 clean:
 	rm -f $(OBJS)
 	rm -f $(TARGET).elf
+	rm -f $(TARGET).bin
