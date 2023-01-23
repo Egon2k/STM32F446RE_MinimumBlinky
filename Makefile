@@ -1,6 +1,6 @@
 TARGET = main
 # Define the linker script location and chip architecture.
-LD_SCRIPT = STM32F446RETX_FLASH.ld
+LD_SCRIPT = STM32F446RETX_RAM.ld
 MCU_SPEC  = cortex-m4
 # Toolchain definitions (ARM bare metal defaults)
 CC = arm-none-eabi-gcc
